@@ -157,10 +157,6 @@ What is a go channel?
 .play examples/select/select.go
 
 
-* An Echo Server
-
-.code examples/echo_server/echo_server.go
-
 
 * References
 
