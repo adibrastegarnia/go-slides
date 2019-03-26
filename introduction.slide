@@ -11,7 +11,7 @@ Robert Griesemer, Rob Pike and Ken Thompson started the Go programming langague 
 
 Google released the first version of Go in 2009.
 
-The four important things a language must thrive to achieve is: *Speed*, *Efficiency*, *Reliability*, *Scale*, *Simplicity*
+The four important things a language must thrive to achieve is: *Speed*, *Efficiency*, *Reliability*, *Scale*, *Simplicity*.
 
 .image images/gopher.jpg 300 300
 
@@ -30,7 +30,7 @@ Python is very simple to write but not so efficient and reliable.
  
 The main design goal of Go is 
 
-- Give developers an experience of writing scripting language like Python or JavaScript 
+- Give developers an experience of writing scripting language like Python or JavaScript. 
 - Provide quirks of low-level compiled language simultaneously.
 
 
@@ -42,9 +42,9 @@ The main design goal of Go is
 
 Go has a built-in and *simple* *concurrency* *model*.
 
-- There are no heavy threads but channels
+- There are no heavy threads but channels.
 
-Go aims to provide a modern equivalent of C in some areas and has brought back pointers
+Go aims to provide a modern equivalent of C in some areas and has brought back pointers.
 
 Go supports *object* *oriented* but in a different way. 
 
