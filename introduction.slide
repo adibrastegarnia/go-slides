@@ -26,13 +26,10 @@ C or C++, they are great at speed, scale and reliability but in terms of simplic
 Java is very reliable and highly scalable, but moderately simple to write and not so efficient compared to other low-level languages.
 
 Python is very simple to write but not so efficient and reliable.
-
  
 The main design goal of Go is 
 
 - Give developers an experience of writing scripting language like Python or JavaScript and provides quirks of low-level compiled language simultaneously.
-
-
 
 
 
@@ -90,7 +87,6 @@ Great built-in libraries
 - html/templates: HTML templating library
 - io/ioutil: implements I/O utility functions
 
-
 * "Go Concurrency Model"
 
 *  Concurrency 
@@ -106,9 +102,6 @@ Go uses a different approach to achive the goal
 - Go shares values by passing them on channels and the shared variables never actively shared by separate threads of execution.
 
 .image images/gophermegaphones.jpg 200 500
-
-
-
 
 *  Goroutines
 
@@ -191,7 +184,6 @@ Go does not support *inheritance*, however it does support *composition*.
 .play examples/oop1/main.go
 
 
-
 * OOP in Go - Interfaces 
 
 .code examples/oop2/main.go /START/,/STOP/
@@ -200,8 +192,6 @@ Go does not support *inheritance*, however it does support *composition*.
 
 .play examples/oop2/main.go /START2/,/STOP2/
 
-
-
 * OOP in GO - Composition
 
 .code examples/oop3/main.go /START1/,/STOP1/
@@ -209,8 +199,6 @@ Go does not support *inheritance*, however it does support *composition*.
 * OOP in Go - Composition (continued)
 
 .play examples/oop3/main.go /START2/,/STOP2/ 
-
-
 
 
 * References
