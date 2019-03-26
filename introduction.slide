@@ -195,7 +195,6 @@ Go does not support *inheritance*, however it does support *composition*.
 .play examples/oop1/main.go
 
 
-
 * OOP in Go - Interfaces 
 
 .code examples/oop2/main.go /START/,/STOP/
@@ -212,8 +211,8 @@ Go does not support *inheritance*, however it does support *composition*.
 
 .play examples/oop3/main.go /START2/,/STOP2/ 
 
-* References
 
+* References
 
 - [[https://www.medium.com/rungo/introduction-to-go-programming-language-golang-89d16ca72bbf]]
 
