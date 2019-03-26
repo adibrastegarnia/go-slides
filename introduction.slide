@@ -46,6 +46,8 @@ Go has a built-in and *simple* *concurrency* *model*.
 
 Go aims to provide a modern equivalent of C in some areas and has brought back pointers.
 
+- Unlike C where a pointer can be incremented or decremented, go does not allow pointer arithmetic.
+
 Go supports *object* *oriented* but in a different way. 
 
 - Go supports *structures* (structs) which with the help of *methods* and *pointers* can help us to implement an object oriented program.
@@ -172,6 +174,34 @@ What is a go channel?
 
 
 
+* "Object Oriented Programming in Go"
+
+Go does not provide classes but it does provide structs. Methods can be added on structs.
+
+- This provides the behaviour of bundling the data and methods that operate on the data together similar to a class.
+
+An *interface* type is defined by a set of methods.
+
+
+Go does not support *inheritance*, however it does support *composition*.
+
+- We can  achieve composition in Go by embedding one struct type into another.  
+
+
+* OOP in Go - Usage of Struct and Methods Together
+
+.play examples/oop1/main.go
+
+
+
+* OOP in Go - Interfaces 
+
+.code examples/oop2/main.go /START/,/STOP/
+
+* OOP in GO - Interfaces (Continued)
+
+.play examples/oop2/main.go /START2/,/STOP2/
+ 
 
 * References
 
