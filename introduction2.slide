@@ -26,14 +26,13 @@ C or C++, they are great at speed, scale and reliability but in terms of simplic
 Java is very reliable and highly scalable, but moderately simple to write and not so efficient compared to other low-level languages.
 
 Python is very simple to write but not so efficient and reliable.
-
-.image images/network.jpg 150 150
  
 The main design goal of Go is 
 
 - Give developers an experience of writing scripting language like Python or JavaScript and provides quirks of low-level compiled language simultaneously.
 
 
+.image images/network.jpg 100 100
 
 
 
