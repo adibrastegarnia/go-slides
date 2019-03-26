@@ -1,23 +1,11 @@
-package handler
+package main
 
 import (
-	"bufio"
 	"fmt"
 	"net"
 )
 
-func handle(client net.Conn) {
-	b := bufio.NewReader(client)
-	for {
-		line, err := b.ReadBytes('\n')
-		if err != nil { // EOF, or worse
-			break
-		}
-		client.Write(line)
-	}
-}
-
-func clientConns(listener net.Listener) chan net.Conn {
+func ClientConns(listener net.Listener) chan net.Conn {
 	ch := make(chan net.Conn)
 	i := 0
 	go func() {

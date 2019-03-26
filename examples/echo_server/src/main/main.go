@@ -12,8 +12,9 @@ func main() {
 	if server == nil {
 		panic("couldn't start listening: " + err.Error())
 	}
-	conns := handler.clientConns(server)
+	conns := ClientConns(server)
+
 	for {
-		go handler.handle(<-conns)
+		go Handle(<-conns)
 	}
 }
