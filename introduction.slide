@@ -54,8 +54,6 @@ Go supports *object* *oriented* but in a different way.
 - Go wants you to *compose* things not inherit like in other OOP languages.
 
 
-
-
 * Interesting Features of Go (continued)
 
 Go’s compiler is super fast.
@@ -195,6 +193,9 @@ Go does not support *inheritance*, however it does support *composition*.
 .play examples/oop1/main.go
 
 
+* Test 
+
+
 * OOP in Go - Interfaces 
 
 .code examples/oop2/main.go /START/,/STOP/
@@ -203,6 +204,8 @@ Go does not support *inheritance*, however it does support *composition*.
 
 .play examples/oop2/main.go /START2/,/STOP2/
 
+
+
 * OOP in GO - Composition
 
 .code examples/oop3/main.go /START1/,/STOP1/
@@ -210,6 +213,8 @@ Go does not support *inheritance*, however it does support *composition*.
 * OOP in Go - Composition (continued)
 
 .play examples/oop3/main.go /START2/,/STOP2/ 
+
+
 
 
 * References
