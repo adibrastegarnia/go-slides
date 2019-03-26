@@ -27,7 +27,7 @@ Java is very reliable and highly scalable, but moderately simple to write and no
 
 Python is very simple to write but not so efficient and reliable.
 
-
+.image images/network.jpg 150 150
  
 The main design goal of Go is 
 
