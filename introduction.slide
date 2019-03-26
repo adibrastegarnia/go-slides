@@ -90,7 +90,6 @@ Great built-in libraries
 - html/templates: HTML templating library
 - io/ioutil: implements I/O utility functions
 
-.image images/network.jpg 200 200
 
 * "Go Concurrency Model"
 
