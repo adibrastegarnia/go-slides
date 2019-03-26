@@ -201,10 +201,6 @@ Go does not support *inheritance*, however it does support *composition*.
 .play examples/oop3/main.go /START2/,/STOP2/ 
 
 
-* Test 
-
-- Test 2
-
 * References
 
 - [[https://www.medium.com/rungo/introduction-to-go-programming-language-golang-89d16ca72bbf]]
