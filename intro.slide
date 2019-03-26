@@ -1,0 +1,218 @@
+An Introduction to Golang
+
+
+Adib Rastegarnia
+Purdue University
+arastega@purdue.edu
+
+* Introduction 
+
+Robert Griesemer, Rob Pike and Ken Thompson started the Go programming langague project in 2007 at Google. 
+
+Google released the first version of Go in 2009.
+
+The four important things a language must thrive to achieve is: *Speed*, *Efficiency*, *Reliability*, *Scale*, *Simplicity*.
+
+.image images/gopher.jpg 300 300
+
+
+
+
+* Introduction (continued)
+
+
+C or C++, they are great at speed, scale and reliability but in terms of simplicity, they are not so great.
+ 
+Java is very reliable and highly scalable, but moderately simple to write and not so efficient compared to other low-level languages.
+
+Python is very simple to write but not so efficient and reliable.
+ 
+The main design goal of Go is 
+
+- Give developers an experience of writing scripting language like Python or JavaScript and provides quirks of low-level compiled language simultaneously.
+
+
+
+* Interesting Features of Go
+
+
+Go has a built-in and *simple* *concurrency* *model*.
+
+- There are no heavy threads but channels.
+
+Go aims to provide a modern equivalent of C in some areas and has brought back pointers.
+
+- Unlike C where a pointer can be incremented or decremented, go does not allow pointer arithmetic.
+
+Go supports *object* *oriented* but in a different way. 
+
+- Go supports *structures* (structs) which with the help of *methods* and *pointers* can help us to implement an object oriented program.
+- Go wants you to *compose* things not inherit like in other OOP languages.
+
+
+* Interesting Features of Go (continued)
+
+Go’s compiler is super fast.
+
+- The Go language syntax is so simple that makes compilation much quicker.
+- Go also compiles to native machine code directly negating the need for environments such as JVM.
+ 
+
+In a Go application,  you can run different languages like C, Python, typing your code directly.
+
+The Go language contains 25 keywords. 
+
+- C contains 32 keywords. 
+- Python contains 35 keywords. 
+- Java contains 51 keywords.    
+
+* Interesting Features of Go (continued) 
+
+Go has great *built*-*in* *command*-*line* *tools*:
+
+- Auto-formatting your code (GoFmt), checking race-condition issues, auto-documentation (Godoc), test coverage reporting, etc.
+
+Go supports *garbage* *collection*:
+
+- No need to free up pointers or worry about dangling pointers in Go. The garbage collector automatically does this job. 
+
+*  Interesting Features of Go (continued)
+  
+
+Great built-in libraries
+
+- net/http: Provides HTTP client and server implementations
+- database/sql: For interaction with SQL databases
+- encoding/json
+- html/templates: HTML templating library
+- io/ioutil: implements I/O utility functions
+
+* "Go Concurrency Model"
+
+*  Concurrency 
+
+What is Concurrency?
+
+- Concurrency is the composition of independently executing computations but It is not parallelism.
+ 
+- Concurrency requires to implement correct access to shared variables.
+
+Go uses a different approach to achive the goal
+
+- Go shares values by passing them on channels and the shared variables never actively shared by separate threads of execution.
+
+.image images/gophermegaphones.jpg 200 500
+
+*  Goroutines
+
+What is a *goroutine*?
+
+- A goroutine is a lightweight thread managed by the Go runtime. 
+- Goroutines are managed by go runtime and has no hardware dependencies when compared with Os threads are managed by kernal and has hardware dependencies.
+- Stack size of go is managed in run-time and can grow up to 1GB which is possible by allocating and freeing heap storage when compared with a thread which has fixed stack size and is determined during compile time and can not grow. 
+
+- Goroutine do not have any identity when comapred with Threads that have identity. 
+
+* An example of goroutine 
+
+.play examples/hello/hello.go
+ 
+
+* Go Channels
+
+Go principle: 
+      
+           Do not communicate by sharing memory; instead, share memory by communicating.
+
+What is a go channel? 
+- A *Channel* is a typed conduit through which you can send and receive values with the channel.
+
+- Channels can be buffered.
+
+- A sender can close a channel to indicate that no more values will be sent.
+
+- Only the sender should close a channel, never the receiver.
+
+- Go also provides *select* which lets us wait on several Go routines. 
+
+* An Example of Using a Go Channel
+
+.play examples/sum/sum.go
+
+
+* An Example of Buffered Channel
+
+.play examples/buffered_channel/buffered_channel.go 
+
+
+* An Example of Using Select with a Go Channel
+
+.play examples/select/select.go
+
+
+* An Echo Server
+
+.code examples/echo_server/src/main/main.go
+
+
+* An Echo Server - Connection Manager
+
+.code examples/echo_server/src/main/connmanager.go
+
+* An Echo Server - Client Handler
+
+.code examples/echo_server/src/main/handler.go
+
+
+
+* "Object Oriented Programming in Go"
+
+Go does not provide classes but it does provide structs. Methods can be added on structs.
+
+- This provides the behaviour of bundling the data and methods that operate on the data together similar to a class.
+
+An *interface* type is defined by a set of methods.
+
+
+Go does not support *inheritance*, however it does support *composition*.
+
+- We can  achieve composition in Go by embedding one struct type into another.  
+
+
+* OOP in Go - Usage of Struct and Methods Together
+
+.play examples/oop1/main.go
+
+
+* OOP in Go - Interfaces 
+
+.code examples/oop2/main.go /START/,/STOP/
+
+* OOP in GO - Interfaces (Continued)
+
+.play examples/oop2/main.go /START2/,/STOP2/
+
+* OOP in GO - Composition
+
+.code examples/oop3/main.go /START1/,/STOP1/
+
+* OOP in Go - Composition (continued)
+
+.play examples/oop3/main.go /START2/,/STOP2/ 
+
+
+* Test 
+
+- Test 2
+
+* References
+
+- [[https://www.medium.com/rungo/introduction-to-go-programming-language-golang-89d16ca72bbf]]
+
+- [[https://www.making.pusher.com/my-5-favourite-features-of-go-and-how-to-use-them/]]
+
+- [[https://hackernoon.com/the-beauty-of-go-98057e3f0a7d]] 
+
+- [[https://golangbot.com/inheritance/]]
+
+- [[https://gobyexample.com]]
